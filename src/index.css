@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-tap-highlight-color: transparent;
+  }
+}
+
+/* Custom soundwave animations */
+@keyframes voice-wave {
+  0%, 100% {
+    height: 8px;
+  }
+  50% {
+    height: 36px;
+  }
+}
+
+.animate-wave-1 {
+  animation: voice-wave 1s ease-in-out infinite;
+  animation-delay: 0.1s;
+}
+
+.animate-wave-2 {
+  animation: voice-wave 1.1s ease-in-out infinite;
+  animation-delay: 0.25s;
+}
+
+.animate-wave-3 {
+  animation: voice-wave 0.9s ease-in-out infinite;
+  animation-delay: 0.4s;
+}
+
+.animate-wave-4 {
+  animation: voice-wave 1.2s ease-in-out infinite;
+  animation-delay: 0.15s;
+}
+
+.animate-wave-5 {
+  animation: voice-wave 0.95s ease-in-out infinite;
+  animation-delay: 0.3s;
+}
+
+/* High contrast sun-friendly cards */
+.sun-contrast-teal {
+  background: linear-gradient(180deg, #0f3735 0%, #092322 100%);
+  border-color: #1e5a56;
+}
+
+.sun-contrast-ocher {
+  background: linear-gradient(180deg, #782a08 0%, #451a03 100%);
+  border-color: #b45309;
+}
